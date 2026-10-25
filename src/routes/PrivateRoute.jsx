@@ -1,0 +1,1 @@
+import {Navigate,useLocation} from 'react-router-dom';import {useAuth} from '../context/AuthContext';export default function PrivateRoute({children}){const {user,loading}=useAuth();const l=useLocation();if(loading)return <div className="loader">Loading…</div>;return user?children:<Navigate to="/login" state={{from:l}} replace/>}
