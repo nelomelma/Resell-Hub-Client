@@ -50,7 +50,7 @@ Create a `.env` file using `.env.example` as a reference.
 
 ## Live Website
 
-Deployment pending.
+https://resell-hub-client-tan.vercel.app/
 
 ## Backend Repository
 
