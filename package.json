@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "node --check vite.config.js",
-    "verify": "npm run check && npm run check:env && npm run check:deploy && npm run build",
+    "verify": "npm run check && npm run check:env && npm run check:deploy && npm run build && npm run check:build",
     "check:deploy": "node -e \"JSON.parse(require('fs').readFileSync('vercel.json','utf8')); console.log('Vercel configuration valid')\"",
     "check:env": "node scripts/check-env.js",
     "check:build": "node scripts/check-build.js"
