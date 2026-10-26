@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "node --check vite.config.js"
+    "check": "node --check vite.config.js",
+    "verify": "npm run check && npm run build"
   },
   "dependencies": {
     "@react-oauth/google": "^0.13.5",
