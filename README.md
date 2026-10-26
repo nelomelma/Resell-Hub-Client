@@ -55,3 +55,37 @@ Deployment pending.
 ## Backend Repository
 
 GitHub repository link will be added after creation.
+
+
+## Frontend Deployment on Vercel
+
+1. Push the client repository to GitHub.
+2. Import the repository into Vercel.
+3. Select Vite as the framework preset.
+4. Set the build command to `npm run build`.
+5. Set the output directory to `dist`.
+6. Configure `VITE_API_URL` with the deployed backend API URL, ending in `/api`.
+7. Deploy the application.
+
+### Client-Side Routing
+
+The `vercel.json` file configures SPA rewrites so that React Router pages can be opened or refreshed directly.
+
+### Pre-Deployment Checks
+
+Run the following commands before deployment:
+
+```bash
+npm run verify
+npm run check:deploy
+```
+
+### Production Environment
+
+Example:
+
+```env
+VITE_API_URL=https://your-backend-domain.com/api
+```
+
+Do not place private API keys or server secrets in frontend environment variables.
