@@ -54,7 +54,7 @@ https://resell-hub-client-tan.vercel.app/
 
 ## Backend Repository
 
-GitHub repository link will be added after creation.
+https://github.com/nelomelma/Resell-Hub-Server
 
 
 ## Frontend Deployment on Vercel
