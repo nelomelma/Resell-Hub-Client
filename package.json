@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "check": "node --check vite.config.js",
     "verify": "npm run check && npm run check:deploy && npm run build",
-    "check:deploy": "node -e \"JSON.parse(require('fs').readFileSync('vercel.json','utf8')); console.log('Vercel configuration valid')\""
+    "check:deploy": "node -e \"JSON.parse(require('fs').readFileSync('vercel.json','utf8')); console.log('Vercel configuration valid')\"",
+    "check:env": "node scripts/check-env.js"
   },
   "dependencies": {
     "@react-oauth/google": "^0.13.5",
