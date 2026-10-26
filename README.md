@@ -112,3 +112,34 @@ npm run verify
 This command checks the Vite configuration, example environment URL, Vercel configuration, and production build.
 
 **Note:** The environment validation script checks `.env.example`, not the deployed environment variables. Configure `VITE_API_URL` separately in Vercel.
+
+
+## Production Build Validation
+
+After generating a production build, verify that the required output files exist.
+
+Run:
+
+```bash
+npm run build
+npm run check:build
+```
+
+The build validation checks:
+
+- `dist/index.html` exists.
+- `dist/assets` exists and is a directory.
+
+A successful check displays:
+
+```text
+PASS: Frontend production build output is ready
+```
+
+For complete pre-deployment verification, run:
+
+```bash
+npm run verify
+```
+
+This runs configuration checks, environment example validation, Vercel configuration validation, production build, and build output validation.
