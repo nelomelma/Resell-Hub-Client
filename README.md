@@ -90,6 +90,8 @@ VITE_API_URL=https://your-backend-domain.com/api
 
 Do not place private API keys or server secrets in frontend environment variables.
 
+**Note:** The environment validation script checks `.env.example`, not the deployed environment variables. Configure `VITE_API_URL` separately in Vercel.
+
 
 ## Environment Validation
 
@@ -143,3 +145,15 @@ npm run verify
 ```
 
 This runs configuration checks, environment example validation, Vercel configuration validation, production build, and build output validation.
+
+
+## Submission Checklist
+
+Before submitting ReSell Hub:
+
+- Verify the production frontend build using `npm run verify`.
+- Confirm that the deployed backend health endpoint responds successfully.
+- Test product browsing, login, and dashboard navigation.
+- Check that frontend and backend GitHub repositories are accessible.
+- Add the live website and backend repository links to this README.
+
