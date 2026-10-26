@@ -89,3 +89,26 @@ VITE_API_URL=https://your-backend-domain.com/api
 ```
 
 Do not place private API keys or server secrets in frontend environment variables.
+
+
+## Environment Validation
+
+The frontend includes an environment validation script to check the example API configuration.
+
+Run:
+
+```bash
+npm run check:env
+```
+
+This checks whether `.env.example` contains a valid `VITE_API_URL`.
+
+For complete pre-deployment verification, run:
+
+```bash
+npm run verify
+```
+
+This command checks the Vite configuration, example environment URL, Vercel configuration, and production build.
+
+**Note:** The environment validation script checks `.env.example`, not the deployed environment variables. Configure `VITE_API_URL` separately in Vercel.
