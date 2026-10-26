@@ -30,6 +30,20 @@ The purpose of ReSell Hub is to provide a user-friendly marketplace for buying a
 - MongoDB
 - Stripe
 
+## NPM Packages Used
+
+- react
+- react-dom
+- react-router-dom
+- axios
+- vite
+- framer-motion
+- lucide-react
+- recharts
+- sweetalert2
+- @react-oauth/google
+- @stripe/react-stripe-js
+
 ## Run Locally
 
 Install dependencies:
@@ -113,8 +127,6 @@ npm run verify
 
 This command checks the Vite configuration, example environment URL, Vercel configuration, and production build.
 
-**Note:** The environment validation script checks `.env.example`, not the deployed environment variables. Configure `VITE_API_URL` separately in Vercel.
-
 
 ## Production Build Validation
 
@@ -155,5 +167,5 @@ Before submitting ReSell Hub:
 - Confirm that the deployed backend health endpoint responds successfully.
 - Test product browsing, login, and dashboard navigation.
 - Check that frontend and backend GitHub repositories are accessible.
-- Add the live website and backend repository links to this README.
+- Confirm that the live website and backend repository links are correct.
 
